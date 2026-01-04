@@ -1,20 +1,29 @@
 #include "dac_man_5x6.dtsi"
 
-&default_transform {
-    col-offset = <6>;
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+
+        row-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>,
+                    <&gpio0 11 GPIO_ACTIVE_LOW>,
+                    <&gpio0 15 GPIO_ACTIVE_LOW>,
+                    <&gpio0 2  GPIO_ACTIVE_LOW>,
+                    <&gpio0 29 GPIO_ACTIVE_LOW>;
+
+        col-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>,
+                    <&gpio1 4 GPIO_ACTIVE_LOW>,
+                    <&gpio1 6 GPIO_ACTIVE_LOW>,
+                    <&gpio1 0 GPIO_ACTIVE_LOW>,
+                    <&gpio0 24 GPIO_ACTIVE_LOW>,
+                    <&gpio0 22 GPIO_ACTIVE_LOW>;
+    };
 };
 
-&kscan {
-    row-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>,
-                <&gpio0 11 GPIO_ACTIVE_LOW>,
-                <&gpio0 15 GPIO_ACTIVE_LOW>,
-                <&gpio0 2  GPIO_ACTIVE_LOW>,
-                <&gpio0 29 GPIO_ACTIVE_LOW>;
-
-    col-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>,
-                <&gpio1 4 GPIO_ACTIVE_LOW>,
-                <&gpio1 6 GPIO_ACTIVE_LOW>,
-                <&gpio1 0 GPIO_ACTIVE_LOW>,
-                <&gpio0 24 GPIO_ACTIVE_LOW>,
-                <&gpio0 22 GPIO_ACTIVE_LOW>;
+&default_transform {
+    col-offset = <6>;
 };
