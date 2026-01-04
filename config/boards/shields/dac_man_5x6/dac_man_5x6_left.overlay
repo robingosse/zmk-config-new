@@ -1,6 +1,6 @@
 #include "dac_man_5x6.dtsi"
 
-&kscan {
+&kscan0 {
     row-gpios = <&gpio0 10 GPIO_ACTIVE_LOW>,
                 <&gpio0 11 GPIO_ACTIVE_LOW>,
                 <&gpio0 15 GPIO_ACTIVE_LOW>,
