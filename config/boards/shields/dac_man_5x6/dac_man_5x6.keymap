@@ -22,14 +22,12 @@
 //                                         |   TAB   |   HOME  |   END   |   DEL   |
 //                                         |  Raise  |    ~    |   GUI   |  Lower  |
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                          &kp N6     &kp N7     &kp N8     &kp N9     &kp N0         &kp BSPC
 &kp TAB    &kp Q      &kp W     &kp E      &kp R      &kp T                           &kp Y      &kp U      &kp I      &kp O      &kp P          &kp BSLH
 &kp LALT   &kp A      &kp S     &kp D      &kp F      &kp G                           &kp H      &kp J      &kp K      &kp L      &mt LGUI SEMI  &kp SQT
 &kp LCTRL  &kp Z      &kp X     &kp C      &kp V      &kp B                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH       &kp RALT
                       &kp LBKT  &mt LGUI RBKT                                                               &kp MINUS  &kp EQUAL
-                                          &mo RAISE  &kp SPACE                &kp ENTER   &mo LOWER
-                                                      &kp HOME &kp LSHIFT   &kp BSPC    &kp PG_UP
-                                                      &kp END  &kp INS      &kp DEL     &kp PG_DN
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
             >;
         };
 
@@ -41,18 +39,16 @@
 // |  lalt   |    a    |    s    |    d    |    f    |    g    |                   |    h    |    j    |    k    |    l    |    ;    |    '    |
 // |  lctrl  |    z    |    x    |    c    |    v    |    b    |                   |    n    |    m    |    ,    |    .    |    /    |  ralt   |
 //                     |    [    |    ]    |                                                           |    -    |    =    |
-//                               | mo lay 1| space   |                   | enter   | mo lay 2|
-//                                         |   tab   |   home  |   end   |   del   |
-//                                         |  raise  |    ~    |   gui   |  lower  |
+//                               | mo lay 1| space   |   home  |                 | enter   | mo lay 2|   end   |
+//                               | mo lay 1| space   |   home  |                 | enter   | mo lay 2|   end   |
+
             bindings = <
-&bt BT_SEL 0 &kp F1     &kp F2    &kp F3     &kp F4     &kp F5                          &kp F6        &kp F7     &kp F8     &kp F9     &kp F10        &kp F11
 &bt BT_NXT   &trans     &trans    &trans     &trans     &kp LBKT                        &kp RBKT      &kp 7      &kp 8      &kp 9      &trans         &kp F12
 &bt BT_PRV   &kp HOME   &kp PG_UP &kp PG_DN  &kp END    &kp LPAR                        &kp RPAR      &kp 4      &kp 5      &kp 6      &kp MINUS      &kp PIPE
 &bt BT_CLR   &trans     &trans    &trans     &trans     &reset                          &bootloader   &kp 1      &kp 2      &kp 3      &kp FSLH       &kp UNDER
                         &trans    &kp PSCRN                                                                      &trans     &trans
-                                             &trans     &trans                          &trans        &trans
-                                                        &trans &trans            &trans &trans
-                                                        &trans &trans            &trans &trans
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
             >;
         };
 
@@ -64,18 +60,15 @@
 // |  lalt   |    a    |    s    |    d    |    f    |    g    |                   |    h    |    j    |    k    |    l    |    ;    |    '    |
 // |  lctrl  |    z    |    x    |    c    |    v    |    b    |                   |    n    |    m    |    ,    |    .    |    /    |  ralt   |
 //                     |    [    |    ]    |                                                           |    -    |    =    |
-//                               | mo lay 1| space   |                   | enter   | mo lay 2|
-//                                         |   tab   |   home  |   end   |   del   |
-//                                         |  raise  |    ~    |   gui   |  lower  |
+//                               | mo lay 1| space   |   home  |                 | enter   | mo lay 2|   end   |
+//                               | mo lay 1| space   |   home  |                 | enter   | mo lay 2|   end   |
             bindings = <
-&kp GRAVE  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                          &kp F6     &kp F7     &kp F8     &kp F9     &kp F10     &kp F11
 &trans     &trans     &kp K_PREV &kp K_PP   &kp K_NEXT &kp C_VOL_UP                    &kp K_CALC &kp KP_NUM &kp INS    &kp SLCK   &trans      &kp F12
 &trans     &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &kp C_VOL_DN                    &trans     &kp H      &kp J      &kp K      &kp L       &trans
 &trans     &trans     &trans     &trans     &trans     &kp C_MUTE                      &trans     &trans     &trans     &trans     &trans      &trans
                       &trans  &trans                                                              &trans     &trans
-                                             &trans  &trans                 &trans   &trans
-                                                      &trans &trans   &trans    &trans
-                                                      &trans &trans   &trans    &trans
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
+                           &mo RAISE  &kp SPACE  &kp LSHIFT                           &kp ENTER   &mo LOWER  &kp BSPC
             >;
         };
    };
