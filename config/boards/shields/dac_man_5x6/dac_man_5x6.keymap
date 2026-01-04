@@ -13,10 +13,10 @@
         default_layer {
 // Commented layout is not actual layout.
 // -------------------------------------------------------------------------------------------------------------------------
-// |   ESC   |    Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |    BSPC    |
-// |   TAB   |    A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    ;    |    '    |
-// |  LCTRL  |    Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    ,    |    .    |    /    |  RALT   |
-//                     |    [    |    ]    |                                                           |    -    |    =    |
+// |   ESC   |    N    |    D    |    P    |    L    |    (    |                   |    )    |    T    |    J    |    Q    |    U    |    BSPC    |
+// |   TAB   |    R    |    S    |    H    |    W    |    B    |                   |    E    |    O    |    Y    |    G    |    F    |    DEL     |
+// |  LCTRL  |    Z    |    X    |    C    |    V    |    !    |                   |    ?    |    A    |    I    |    K    |    M    |   ENTER    |
+//                     |    "    |    '    |                                                           |    ,    |    .    |
 //                               | MO lay 1| SPACE   | SPACE   |                   | ENTER   | MO lay 2| MO lay 2|
 //                               |   TAB   |   HOME  |    ~    |                   |   END   |   DEL   | MO lay 2|
             bindings = <
